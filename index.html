@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Molino</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <p class="walkin-banner" id="walkin-banner">WALK-IN ROOM RATES</p>
+      <div class="logo-box">
+        <img class="logo" src="../images/image1.png" alt="logo" />
+      </div>
+      <img class="bg-logo" src="../images/image2.png" alt="bg-logo" />
+
+      <!-- WALK-IN RATES -->
+      <!-- weekday -->
+      <div class="modal" id="modal">
+        <table class="weekday" id="weekday">
+          <th class="week-el">WEEKDAY RATE</th>
+          <th class="room-type">ECONO</th>
+          <th class="room-type">PREMIUM</th>
+          <th class="room-type">DELUXE</th>
+          <th class="room-type">REGENCY 2</th>
+          <tr class="rate-box">
+            <td class="los">3HRS</td>
+            <td class="rates">345</td>
+            <td class="rates">435</td>
+            <td class="rates">485</td>
+            <td class="rates">710</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">6HRS</td>
+            <td class="rates">740</td>
+            <td class="rates">740</td>
+            <td class="rates">790</td>
+            <td class="rates">1005</td>
+          </tr>
+          <tr class="rate-box" id="regular-ten">
+            <td class="los">10HRS</td>
+            <td class="rates">950</td>
+            <td class="rates">950</td>
+            <td class="rates">1000</td>
+            <td class="rates">1225</td>
+          </tr>
+          <tr class="rate-box" id="onp">
+            <td class="los">10HRS ONP</td>
+            <td class="rates">615</td>
+            <td class="rates">615</td>
+            <td class="rates">705</td>
+            <td class="rates">1040</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">12HRS</td>
+            <td class="rates">1165</td>
+            <td class="rates">1165</td>
+            <td class="rates">1215</td>
+            <td class="rates">1440</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">24HRS</td>
+            <td class="rates">1555</td>
+            <td class="rates">1555</td>
+            <td class="rates">1605</td>
+            <td class="rates">1830</td>
+          </tr>
+        </table>
+        <!-- weekend -->
+        <table class="weekend" id="weekend">
+          <th class="week-el">WEEKEND RATE</th>
+          <th class="room-type">ECONO</th>
+          <th class="room-type">PREMIUM</th>
+          <th class="room-type">DELUXE</th>
+          <th class="room-type">REGENCY 1</th>
+          <tr class="rate-box">
+            <td class="los">3HRS</td>
+            <td class="rates">410</td>
+            <td class="rates">500</td>
+            <td class="rates">550</td>
+            <td class="rates">775</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">6HRS</td>
+            <td class="rates">810</td>
+            <td class="rates">810</td>
+            <td class="rates">860</td>
+            <td class="rates">1085</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">10HRS</td>
+            <td class="rates">1070</td>
+            <td class="rates">1070</td>
+            <td class="rates">1120</td>
+            <td class="rates">1345</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">12HRS</td>
+            <td class="rates">1365</td>
+            <td class="rates">1365</td>
+            <td class="rates">1415</td>
+            <td class="rates">1650</td>
+          </tr>
+          <tr class="rate-box">
+            <td class="los">24HRS</td>
+            <td class="rates">1780</td>
+            <td class="rates">1780</td>
+            <td class="rates">1830</td>
+            <td class="rates">2065</td>
+          </tr>
+        </table>
+      </div>
+      <div class="date-box">
+        <h2 class="date-el" id="date-el">date</h2>
+      </div>
+    </div>
+    <!-- DRIVE-IN RATES -->
+    <div class="drivein-container" id="drivein-container">
+      <p class="walkin-banner">DRIVE-IN ROOM RATES</p>
+      <!-- weekday -->
+      <table class="weekday-drivein" id="weekday-drivein">
+        <th class="drivein-week-el">WEEKDAY RATE</th>
+        <th class="drivein-type">MC DELUXE</th>
+        <th class="drivein-type">MC EXECUTIVE</th>
+        <th class="drivein-type">REGULAR GARAGE</th>
+        <th class="drivein-type">EXECUTIVE GARAGE</th>
+        <th class="drivein-type">MEGA GARAGE</th>
+        <tr class="rate-box">
+          <td class="drivein-los">3HRS</td>
+          <td class="drivein-rates">535</td>
+          <td class="drivein-rates">585</td>
+          <td class="drivein-rates">645</td>
+          <td class="drivein-rates">710</td>
+          <td class="drivein-rates">910</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">6HRS</td>
+          <td class="drivein-rates">830</td>
+          <td class="drivein-rates">880</td>
+          <td class="drivein-rates">1050</td>
+          <td class="drivein-rates">1215</td>
+          <td class="drivein-rates">1515</td>
+        </tr>
+        <tr class="rate-box" id="drivein-regular-ten">
+          <td class="drivein-los">10HRS</td>
+          <td class="drivein-rates">1050</td>
+          <td class="drivein-rates">1100</td>
+          <td class="drivein-rates">1270</td>
+          <td class="drivein-rates">1425</td>
+          <td class="drivein-rates">1725</td>
+        </tr>
+        <tr class="rate-box" id="drivein-onp">
+          <td class="drivein-los">10HRS ONP</td>
+          <td class="drivein-rates">775</td>
+          <td class="drivein-rates">855</td>
+          <td class="drivein-rates">-</td>
+          <td class="drivein-rates">1150</td>
+          <td class="drivein-rates">1480</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">12HRS</td>
+          <td class="drivein-rates">1265</td>
+          <td class="drivein-rates">1315</td>
+          <td class="drivein-rates">1465</td>
+          <td class="drivein-rates">1640</td>
+          <td class="drivein-rates">1940</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">24HRS</td>
+          <td class="drivein-rates">1655</td>
+          <td class="drivein-rates">1705</td>
+          <td class="drivein-rates">1905</td>
+          <td class="drivein-rates">2080</td>
+          <td class="drivein-rates">2380</td>
+        </tr>
+      </table>
+      <!-- weekend -->
+      <table class="weekend-drivein" id="weekend-drivein">
+        <th class="drivein-week-el">WEEKEND RATE</th>
+        <th class="drivein-type">MC DELUXE</th>
+        <th class="drivein-type">MC EXECUTIVE</th>
+        <th class="drivein-type">REGULAR GARAGE</th>
+        <th class="drivein-type">EXECUTIVE GARAGE</th>
+        <th class="drivein-type">MEGA GARAGE</th>
+        <tr class="rate-box">
+          <td class="drivein-los">3HRS</td>
+          <td class="drivein-rates">600</td>
+          <td class="drivein-rates">650</td>
+          <td class="drivein-rates">700</td>
+          <td class="drivein-rates">775</td>
+          <td class="drivein-rates">975</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">6HRS</td>
+          <td class="drivein-rates">910</td>
+          <td class="drivein-rates">960</td>
+          <td class="drivein-rates">1110</td>
+          <td class="drivein-rates">1295</td>
+          <td class="drivein-rates">1595</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">10HRS</td>
+          <td class="drivein-rates">1170</td>
+          <td class="drivein-rates">1220</td>
+          <td class="drivein-rates">1370</td>
+          <td class="drivein-rates">1555</td>
+          <td class="drivein-rates">1855</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">12HRS</td>
+          <td class="drivein-rates">1465</td>
+          <td class="drivein-rates">1515</td>
+          <td class="drivein-rates">1665</td>
+          <td class="drivein-rates">1870</td>
+          <td class="drivein-rates">2170</td>
+        </tr>
+        <tr class="rate-box">
+          <td class="drivein-los">24HRS</td>
+          <td class="drivein-rates">1880</td>
+          <td class="drivein-rates">1930</td>
+          <td class="drivein-rates">2130</td>
+          <td class="drivein-rates">2335</td>
+          <td class="drivein-rates">2635</td>
+        </tr>
+      </table>
+    </div>
+    <!-- button to show drivein and close-->
+    <button class="drivein" id="drivein">DRIVE-IN</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
