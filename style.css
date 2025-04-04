@@ -231,3 +231,25 @@ td {
     bottom: 90px;
   }
 }
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+  table {
+    font-size: 20px;
+  }
+  td {
+    padding: 25px 0px;
+    width: 145px;
+  }
+  th {
+    padding: 20px 0px;
+  }
+  .drivein table {
+    margin-bottom: 20px;
+  }
+  .drivein {
+    bottom: 138px;
+  }
+  .date-el {
+    bottom: 50px;
+  }
+}
