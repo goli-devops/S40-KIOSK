@@ -28,7 +28,7 @@ table {
 }
 
 td {
-  height: calc(90vh / 9); /* Adjust based on how many rows you have */
+  height: calc(90vh / 12); /* Adjust based on how many rows you have */
 }
 th {
   font-weight: 800;
