@@ -31,21 +31,59 @@ setInterval(() => {
   let driveinRegularTen = document.getElementById("drivein-regular-ten")
   let driveinOnp = document.getElementById("drivein-onp")
 
-  // Start WEEKDAY 6pm Sunday to Friday 5:59 am
-  // Start WEEKEND Friday 6am to Sunday 5:59pm
-  if (
+  // ---- HOLIDAY LIST ----
+  const holidayDates = [
+    "2025-06-06", // Eid’l Adha (estimated)
+    "2025-06-12", // Independence Day
+    "2025-08-21", // Ninoy Aquino Day
+    "2025-08-25", // National Heroes Day
+    "2025-11-01", // All Saints' Day
+    "2025-11-30", // Bonifacio Day
+    "2025-12-08", // Feast of the Immaculate Conception
+    "2025-12-24", // Christmas Eve
+    "2025-12-25", // Christmas Day
+    "2025-12-30", // Rizal Day
+    "2025-12-31", // New Year's Eve
+  ]
+
+  function isHolidayNow() {
+    for (let dateStr of holidayDates) {
+      // Holiday starts at 12:00 AM of the date
+      const holidayStart = new Date(`${dateStr}T00:00:00`)
+
+      // Holiday ends at 11:59:59 PM of the same day
+      const holidayEnd = new Date(`${dateStr}T23:59:59`)
+
+      if (date >= holidayStart && date <= holidayEnd) {
+        return true
+      }
+    }
+    return false
+  }
+
+  // ---- RATE DISPLAY LOGIC ----
+  if (isHolidayNow()) {
+    // HOLIDAY RATE
+    weekendRateElement.style.display = "block"
+    driveinWeekendElement.style.display = "block"
+    document.getElementById("holiday-weekend").textContent = "HOLIDAY RATE"
+    document.getElementById("holiday-weekend-drivein").textContent =
+      "HOLIDAY RATE"
+    weekdayRateElement.style.display = "none"
+    driveinWeekdayElement.style.display = "none"
+  } else if (
     // WEEKEND: Friday 6:00am to Sunday 5:59pm
     (currentDay === 5 && currentHour >= 6) || // Friday from 6:00am onwards
     currentDay === 6 || // Saturday all day
     (currentDay === 0 && currentHour < 18) // Sunday before 6:00pm
   ) {
-    // Show Weekend Rate
+    // WEEKEND RATE
     weekendRateElement.style.display = "block"
     driveinWeekendElement.style.display = "block"
     weekdayRateElement.style.display = "none"
     driveinWeekdayElement.style.display = "none"
   } else {
-    // Show Weekday Rate
+    // WEEKDAY RATE
     weekdayRateElement.style.display = "block"
     driveinWeekdayElement.style.display = "block"
     weekendRateElement.style.display = "none"
